@@ -2,9 +2,41 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('/IMG/img_background.png'); 
-    background-size: auto; 
-    background-position: top left; 
-    background-repeat: repeat; 
-    background-attachment: scroll; 
+    overflow: hidden; /* Para esconder qualquer overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Tamanho maior para cobrir diagonalmente */
+    height: 200%; /* Tamanho maior para cobrir diagonalmente */
+    transform: translate(-50%, -50%);
+}
+
+.img_background {
+    width: 100%;
+    height: 100%;
+    background-image: url('/IMG/img_background.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.container {
+    position: relative; /* Alterado para relativo para não se sobrepor ao background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tamanho da viewport */
+}
+
+.quadrado {
+    width: 700px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de transparência */
+    border-radius: 10px; /* Borda redonda com raio de 10px */
+    border: 3px solid white; /* Borda branca fina */
 }
