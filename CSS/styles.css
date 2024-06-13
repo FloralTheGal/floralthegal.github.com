@@ -39,9 +39,10 @@ body {
 }
 
 .quadrado {
-    width: 700px;
-    height: 500px;
+    width: 0;
+    height: 0;
     background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de transparência */
     border-radius: 10px; /* Borda redonda com raio de 10px */
     border: 3px solid white; /* Borda branca fina */
+    transition: none; /* Remove transições CSS */
 }
