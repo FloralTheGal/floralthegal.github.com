@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('IMG/img_background.jpg'); 
+    background-image: url('/IMG/img_background.png'); 
     background-size: auto; 
     background-position: top left; 
     background-repeat: repeat; 
