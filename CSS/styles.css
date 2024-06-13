@@ -6,6 +6,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Definindo o body como relativo */
+    z-index: 1; /* Garantindo que o body esteja acima de todos os elementos */
 }
 
 .background-container {
@@ -15,6 +17,7 @@ body {
     width: 200%; /* Tamanho maior para cobrir diagonalmente */
     height: 200%; /* Tamanho maior para cobrir diagonalmente */
     transform: translate(-50%, -50%);
+    z-index: -1; /* Definindo o background como mais profundo */
 }
 
 .img_background {
@@ -26,11 +29,13 @@ body {
 }
 
 .container {
-    position: relative; /* Alterado para relativo para não se sobrepor ao background */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Tamanho da viewport */
+    position: relative; /* Definindo o container como relativo */
+    z-index: 2; /* Garantindo que o container esteja acima do background */
+    width: 100%;
+    height: 100%;
 }
 
 .quadrado {
