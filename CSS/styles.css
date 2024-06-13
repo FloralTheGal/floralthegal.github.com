@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Pepperoni-Regular-V2';
+    src: url('/fonts/Pepperoni-Regular-V2.otf') format('opentype');
+}
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@ body {
     align-items: center;
     position: relative; /* Definindo o body como relativo */
     z-index: 1; /* Garantindo que o body esteja acima de todos os elementos */
+    font-family: 'Pepperoni-Regular-V2', sans-serif; /* Aplicando a fonte customizada */
 }
 
 .background-container {
@@ -45,4 +50,19 @@ body {
     border-radius: 10px; /* Borda redonda com raio de 10px */
     border: 3px solid white; /* Borda branca fina */
     transition: none; /* Remove transições CSS */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar os itens no topo */
+    padding-top: 20px; /* Espaçamento para o texto */
+}
+
+.quadrado h1 {
+    margin: 0;
+    color: white; /* Cor do texto */
+    font-size: 4em; /* Tamanho do texto */
+    text-shadow: 
+    -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
 }
