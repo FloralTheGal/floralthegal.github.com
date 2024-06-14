@@ -6,29 +6,29 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden; /* Para esconder qualquer overflow */
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Definindo o body como relativo */
-    z-index: 1; /* Garantindo que o body esteja acima de todos os elementos */
-    font-family: 'Pepperoni-Regular-V2', sans-serif; /* Aplicando a fonte customizada */
+    position: relative; 
+    z-index: 1; 
+    font-family: 'Pepperoni-Regular-V2', sans-serif; 
 }
 
 .background-container {
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%; /* Tamanho maior para cobrir diagonalmente */
-    height: 200%; /* Tamanho maior para cobrir diagonalmente */
+    width: 200%; 
+    height: 200%; 
     transform: translate(-50%, -50%);
-    z-index: -1; /* Definindo o background como mais profundo */
+    z-index: -1; 
 }
 
 .img_background {
     width: 100%;
     height: 100%;
-    background-image: url('/IMG/img_background.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('/IMG/img_background.png'); 
     background-size: auto;
     background-repeat: repeat;
 }
@@ -37,8 +37,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Definindo o container como relativo */
-    z-index: 2; /* Garantindo que o container esteja acima do background */
+    position: relative; 
+    z-index: 2; 
     width: 100%;
     height: 100%;
 }
@@ -46,23 +46,26 @@ body {
 .quadrado {
     width: 0;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de transparência */
-    border-radius: 10px; /* Borda redonda com raio de 10px */
-    border: 3px solid white; /* Borda branca fina */
-    transition: none; /* Remove transições CSS */
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px; 
+    border: 3px solid white; 
+    transition: none;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinhar os itens no topo */
-    padding-top: 20px; /* Espaçamento para o texto */
+    align-items: flex-start; 
+    padding-top: 20px; 
+    overflow: hidden;
 }
 
 .quadrado h1 {
     margin: 0;
-    color: white; /* Cor do texto */
-    font-size: 4em; /* Tamanho do texto */
+    color: white; 
+    font-size: 4em; 
     text-shadow: 
     -3px -3px 0 #000,  
     3px -3px 0 #000,
     -3px 3px 0 #000,
     3px 3px 0 #000;
+    opacity: 0; 
+    transition: opacity 1s;
 }
